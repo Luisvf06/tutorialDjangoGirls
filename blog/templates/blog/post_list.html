@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Mi Blog</title>
+    </head>
+    <body>
+        <header>
+            <h1><a href="/">Django Girls Blog </a></h1>
+        </header>
+        {%for post in posts_mostrar %}
+        <article>
+            <p>Hola</p>
+            <time> published: {{post.published_date}}</time>
+            <h2><a href="">{{post.title}}</a></h2>
+            <p>DjangoGirls</p>
+        </article>
+    </body>
+</html>
